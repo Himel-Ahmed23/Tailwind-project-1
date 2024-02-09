@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=EB+Garamond:wght@400;500;600;700;800&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@400;700;900&family=Nunito:wght@200;300;400;600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    * {
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .header, .newsletter {
+        background-color: #aeb0ee;
+    }
+</style>
+
+<body>
+    <!-- Navbar -->
+    <header class="header ">
+        <nav class=" bg-white shadow md:flex md:items-center md:justify-between">
+            <div class="text-2xl">
+                <img class="h-12 inline ml-4" src="images/Logo.jpg" alt="">
+                <span>Skincare Shop</span>
+            </div>
+            <div>
+                <ul class=" md:flex md:items-center ml-9 md:ml-0 ">
+                    <li class="mx-4 my-5 md:my-0 hover:text-orange-500"><a class="text-bage" href="#">Home</a></li>
+                    <li class="mx-4 my-5 md:my-0 hover:text-orange-500"><a class="text-bage" href="#">Skincare</a></li>
+                    <li class="mx-4 my-5 md:my-0 hover:text-orange-500"><a class="text-bage" href="#">Pages</a></li>
+                    <li class="mx-4 my-5 md:my-0 hover:text-orange-500"><a class="text-bage" href="#">Body</a></li>
+                </ul>
+            </div>
+            <button
+                class="bg-[#4e9900] text-white duration-400 px-7 py-1 m-3 md:m-0 mx-6 rounded md:mr-4 hover:bg-[#89bd37]">Shop
+                Now</button>
+        </nav>
+
+        <!-- Banner Section-->
+        <div class="bnner md:flex items-center py-7">
+            <div class="py-8 text-center">
+                <h1 class="font-normal md:text-4xl text-3xl">Spin Clean <br> Your Beauty Routine</h1>
+                <p class="py-6 font-light">Natural and organic is the future of skincare and life as we know it</p>
+                <button class="border border-black py-1 px-2 text-sm hover:bg-orange-500 hover:text-white">Shop The
+                    Essential</button>
+            </div>
+            <div class="">
+                <img src="images/image1.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <!-- Introducing Section -->
+    <div class="m-12 md:flex items-center gap-12">
+        <div class="md:w-2/3">
+            <img src="images/introduce.png" alt="">
+        </div>
+        <div>
+            <h6 class="font-normal py-3 text-[#696060]">INTRODUCING</h6>
+            <h2 class="font-normal md:text-3xl text-2xl">We Believe In Natural Beauty</h2>
+            <p class="py-3 font-light text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                asperiores sed, nemo vel sapiente nisi. Culpa dignissimos possimus omnis consequatur praesentium illum
+                ducimus architecto tempore, voluptatem veritatis illo esse optio sapiente quibusdam, eligendi, sit
+                aliquid.</p>
+            <button class="border border-black py-1 px-2 text-xs hover:bg-orange-500 hover:text-white">Discover
+                More</button>
+        </div>
+    </div>
+
+    <!-- Product Section -->
+    <div class="product m-12 text-center">
+        <h6 class="font-normal py-3 text-[#696060]">Gotta Haveit</h6>
+        <h2 class="font-normal md:text-3xl text-2xl ">See Our All Product</h2>
+        <p class="py-3 font-light text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque asperiores
+            sed, nemo vel sapiente nisi. Culpa dignissimos possimus omnis consequatur praesentium illum ducimus
+            architecto tempore, voluptatem veritatis illo esse optio sapiente quibusdam, eligendi, sit aliquid.</p>
+        <div class="grid md:grid-cols-4 gap-8 my-6">
+            <div class="text-left">
+                <img src="images/product-1.png" alt="">
+                <h6 class="font-normal text-xl">Pout pop Lipstick</h6>
+                <p class="font-light text-base">$24.00-$34.00</p>
+            </div>
+            <div class="text-left">
+                <img src="images/product-2.png" alt="">
+                <h6 class="font-normal text-xl">Pout pop Lipstick</h6>
+                <p class="font-light text-base">$24.00-$34.00</p>
+            </div>
+            <div class="text-left">
+                <img src="images/product-3.png" alt="">
+                <h6 class="font-normal text-xl">Pout pop Lipstick</h6>
+                <p class="font-light text-base">$24.00-$34.00</p>
+            </div>
+            <div class="text-left">
+                <img src="images/product4.png" alt="">
+                <h6 class="font-normal text-xl">Pout pop Lipstick</h6>
+                <p class="font-light text-base">$24.00-$34.00</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Perfect Section -->
+    <div class="perfect grid md:grid-cols-2 my-8 gap-5 items-center ">
+        <div class="text-center m-10 order-2 md:order-1">
+            <h6 class="font-normal py-3 text-[#696060]">PERFECT</h6>
+            <h2 class="font-normal md:text-3xl text-2xl">Prep. Correct. Perfect.</h2>
+            <p class="py-3 font-light text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                asperiores sed, nemo vel sapiente nisi. Culpa dignissimos possimus omnis consequatur praesentium illum
+                ducimus architecto tempore, voluptatem.</p>
+            <button class="border border-black py-1 px-2 text-xs hover:bg-orange-500 hover:text-white">Shop The
+                Essential</button>
+        </div>
+        <div class="order-1 md:order-2">
+            <img src="images/perfect.png" alt="">
+        </div>
+    </div>
+
+    <!-- Photos Section -->
+    <div class="photos bg-[#DAD9DC] p-5">
+        <div class="grid md:grid-cols-4 space-y-4 md:space-y-0">
+            <div><img src="images/glry1.png" alt=""></div>
+            <div class=" md:col-span-2 md:row-span-2 md:p-10 md:pt-0"><img src="images/glrBig.png" alt=""></div>
+            <div><img src="images/glry2.png" alt=""></div>
+            <div><img src="images/glry3.png" alt=""></div>
+            <div><img src="images/glry4.png" alt=""></div>
+        </div>
+    </div>
+
+    <!-- Newsletter Section -->
+    <div class="newsletter md:p-12 p-6">
+        <div class="text-center">
+            <h6 class="font-normal py-3 text-[#696060]">NEWSLETTER</h6>
+            <h2 class="font-normal md:text-2xl text-xl">Subscribe now & get 10% off</h2>
+            <p class=" font-light py-2">Be the first to know about our new arrivals and exclusive offer.</p>
+            <form>
+                <div class="py-3">
+                    <input class="py-1 px-3 outline-none" type="email" placeholder="Enter Your Email" name="email">
+                    <input class="bg-white py-1 px-2 -ml-2 outline-none hover:bg-orange-500 hover:text-[#696060]"
+                        type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section  -->
+    <footer class="bg-black py-3 px-8">
+        <div class="footer md:flex md:justify-between text-white items-center">
+            <div class="text-[10px]">
+                <p>COPYRIGHT © 2023 | ALL RIGHTS RESERVED.</p>
+            </div>
+            <ul class="text-[10px] font-light md:flex mt-2 md:mt-0 gap-5">
+                <li class="hover:text-orange-500"><a href="#">PRIVACY POLICY
+                    </a></li>
+                <li class="hover:text-orange-500 "><a href="#">TERMS OF USE</a></li>
+                <li class="hover:text-orange-500"><a href="#">CONTACT FAQ</a></li>
+                <li class="hover:text-orange-500"><a href="#">STORES</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
